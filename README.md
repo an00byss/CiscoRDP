@@ -1,5 +1,5 @@
 # ciscoRDP
-A powershell POC to bypass “AllowRemoteUsers” setting set in Cisco Adaptive Security Device Manager (ASDM)
+A powershell POC to bypass the “AllowRemoteUsers” setting set in Cisco Adaptive Security Device Manager (ASDM)
 
 ## Overview
 <p>This vulnerability was manifested by my laziness for carrying too many laptops. When using Cisco AnyConnect Secure Mobility Client to connect to a vpn, AnyConnect checks if the connection is being initiated from a Remote Desktop session. If an orgainzation has the "AllowRemoteUsers" setting set to deny in ASDM, Anyconnect will block the connection. However, due to a bug in the checking process it is possible to bypass that restriction. Cisco says this vulnerability is a low and a security advisory isn't warranted instead they will add to the release notes of bug CSCvu14970, so here's the tool.

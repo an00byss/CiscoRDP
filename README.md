@@ -11,8 +11,9 @@ Vulnerability has been reported to Cisco PSIRT on: 05/04/2020
 If Company XYZ has autoconnect configured for their clients the script will autoconnect to the network bypassing the Remote Desktop Check and authentication.
 
 ## Usage
-A user session must be active if not, RDP to the machine and then run the script. An interactive remote shell will be needed to run the script as it will need to be killed once the VPN connects. WinRM works perfectly with this.
-* If script kills anyconnect but doesn't connect to vpn, re-run as it may take 2 or 3 times.
+A user session must be present if not, RDP to the machine to create one. If a user session is already present you can skip this step. An interactive remote shell will be needed to run the script. WinRM, PsExec and WmiExec all work with this, once the VPN connects you can simply kill the script.
+
+* If script kills anyconnect but doesn't connect to vpn, then re-run as it may take 2 or 3 times.
 
 ## Demo
 ![](ciscoRDP-official.gif)

@@ -19,4 +19,4 @@ A user session must be present if not, RDP to the machine to create one. If a us
 ![](ciscoRDP-official.gif)
 
 ## Affected Versions
-Affects Cisco AnyConnect Secure Mobility Client 4.8.x and prior
+Affects Cisco AnyConnect Secure Mobility Client 4.9.x and prior
